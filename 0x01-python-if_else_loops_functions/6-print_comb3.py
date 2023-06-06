@@ -5,4 +5,4 @@ for num in range(0, 10):
         print("{:d}{:d}".format(num, number), end="")
         if num != 8 or number != 9:
             print(", ", end="")
-print()
+print("")
