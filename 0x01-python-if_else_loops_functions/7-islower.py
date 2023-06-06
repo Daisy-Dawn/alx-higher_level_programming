@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
 def islower(c):
-        return ord('a') <= ord(c) <= ord('z')
-
-print("a is {}".format("lower" if islower("a") else "upper"))
-print("H is {}".format("lower" if islower("H") else "upper"))
-print("A is {}".format("lower" if islower("A") else "upper"))
-print("3 is {}".format("lower" if islower("3") else "upper"))
-print("g is {}".format("lower" if islower("g") else "upper"))
+        if len(c) != 1:
+            raise ValueError("Input must be a single character")        
+# Check if the ASCII value of the character is within the range of lowercase letters
+        if ord(c) >= 97 and ord(c) <= 122:
+            return True
+        else:
+            return False
