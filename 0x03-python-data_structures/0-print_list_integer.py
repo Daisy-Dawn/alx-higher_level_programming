@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
 def print_list_integer(my_list=[]):
-    for x in range(len(my_list)):
-        print("{:d}".format(my_list[x]))
+    """function that prints integer"""
+    for item in range(len(my_list)):
+        print("{:d}".format(my_list[item]))
