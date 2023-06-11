@@ -5,7 +5,7 @@ def multiple_returns(sentence):
     y = sentence[0]
     z = ()
     if x == 0:
-        z = (0, None)
+        z = 0, "None"
     else:
-        z = (x, y)
+        z = x, y
     return z
